@@ -52,14 +52,7 @@ def main(model_path, input_file, output_file, image_path):
     with open(input_file, "r", encoding="utf-8") as f:
         questions = [json.loads(q) for q in f]
 
-    count = 0
-
     for line in tqdm(questions):
-        count += 1
-
-        if count <= 4500:
-            continue
-
         idx = line["question_id"]
         image_file = line["image"]
         question = line["question"]
