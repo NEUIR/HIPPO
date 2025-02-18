@@ -7,7 +7,7 @@ Clone the Respository
 
 ```
 git clone https://github.com/NEUIR/HIPPO.git
-cd HIPPO-main
+cd HIPPO
 ```
 
 Install Dependencies
