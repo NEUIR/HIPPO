@@ -4,10 +4,8 @@ import json
 from PIL import Image
 from transformers import AutoModel, AutoTokenizer
 from tqdm import tqdm
-import math
 import shortuuid
 from vllm import LLM, SamplingParams
-import logging
 import pandas as pd
 import argparse
 from prompt.multi_modal_prompt import wtq_template, tabmwp_template, tat_qa_template, hitab_template, fetaqa_template, infotabs_template, tabfact_template
@@ -72,7 +70,6 @@ def main(model_path, input_file, output_file, image_path):
             markdown_table = get_markdown_table(table, 7000, tokenizer)
         category = line["category"]
 
-        # 使用字典来映射 idx 和对应的 template
         template_mapping = {
             "WTQ_for_TQA": wtq_template,
             "TABMWP_for_TQA": tabmwp_template,
@@ -141,9 +138,9 @@ def main(model_path, input_file, output_file, image_path):
             "category": category
         }
 
-        # with open(output_file, "a") as f:
-        #     json.dump(res, f)
-        #     f.write("\n")
+        with open(output_file, "a") as f:
+            json.dump(res, f)
+            f.write("\n")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process input and output files.")
