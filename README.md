@@ -1,9 +1,10 @@
 # HIPPO
 Source code for paper: HIPPO: Enhancing the Table Understanding Capability of Large Language Models through Hybrid-Modal Preference Optimization
 
+## Overview
 
 
-## Installation
+## Environment Setup
 
 Clone the repository
 
@@ -20,11 +21,8 @@ conda activate hippo
 pip install -r requirments.txt
 ```
 
-
-
-## Reproduce HIPPO
-
-### Download MMTab Image
+## Data Preparation
+Download the MMTab Image
 ```
 # test
 wget https://huggingface.co/datasets/SpursgoZmy/MMTab/resolve/main/MMTab-eval_table_images_23K.zip
@@ -37,10 +35,9 @@ mv MMTab-instruct_table_images_82K.zip
 unzip MMTab-instruct_table_images_82K.zip
 ```
 
-
+## Reproduce 
 
 ### Train HIPPO
-
 You can download the checkpoint of HIPPO directly from [here](https://huggingface.co/HaolanWang/HIPPO) or go to the ``scripts`` and train the HIPPO model.
 
 For Training, you need to download the model [MiniCPM-V-2.6](https://huggingface.co/openbmb/MiniCPM-V-2_6) and [data](https://drive.google.com/file/d/15H9IRiL2emMQ8mrMthZWQfCTZbBMKtSC/view?usp=sharing). Then you can go to the ``scripts`` to construct DPO data.
