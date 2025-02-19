@@ -6,7 +6,7 @@ We propose HIPPO, which represents tables using both text and image, and optimiz
 
 Specifically, HIPPO samples model responses from hybrid-modal table representations and designs a modality-consistent sampling strategy to enhance response diversity and mitigate modality bias during DPO training.
 
-![](figs\model.jpg)
+![](figs/model.png)
 
 ## Environment Setup
 
