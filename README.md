@@ -2,8 +2,9 @@
 Source code for paper: HIPPO: Enhancing the Table Understanding Capability of Large Language Models through Hybrid-Modal Preference Optimization
 
 ## Overview
+We propose HIPPO, which represents tables using both text and image, and optimizes MLLMs to effectively learn more comprehensive table information from these multiple modalities.
 
-
+Specifically, HIPPO samples model responses from hybrid-modal table representations and designs a modality-consistent sampling strategy to enhance response diversity and mitigate modality bias during DPO training.
 ## Environment Setup
 
 Clone the repository
