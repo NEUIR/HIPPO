@@ -44,14 +44,12 @@ unzip MMTab-instruct_table_images_82K.zip
 ### Train HIPPO
 You can download the checkpoint of HIPPO directly from [here](https://huggingface.co/HaolanWang/HIPPO) or go to the ``scripts`` and train the HIPPO model.
 
-For Training, you need to download the model [MiniCPM-V-2.6](https://huggingface.co/openbmb/MiniCPM-V-2_6) and [data](https://drive.google.com/file/d/15H9IRiL2emMQ8mrMthZWQfCTZbBMKtSC/view?usp=sharing). Then you can go to the ``scripts`` to construct DPO data.
+For training, you need to download the model [MiniCPM-V-2.6](https://huggingface.co/openbmb/MiniCPM-V-2_6) and [data](https://huggingface.co/datasets/HaolanWang/HIPPO). Then you can go to the ``scripts`` to construct DPO data.
 
 ```
 cd scripts
 bash construct_dpo_data.bash
 ```
-
-You can also use constructed data directly: [dpo_data](https://drive.google.com/file/d/1KrCD9Zrw8-N7KbRYLwvIn7N-3JUTcn5f/view?usp=sharing).
 
 Then you can train the model.
 
