@@ -67,9 +67,26 @@ For Inference, you can go to the ``scripts`` and inference on the HIPPO model:
 cd scripts
 bash inference.sh
 ```
-
-
-
 ### Evaluation
 
 For evaluation, you can use ``src/eval/MMTab_evaluation.ipynb`` to evaluate the performance.
+
+## Contact
+If you have questions, suggestions, and bug reports, please email:
+```
+wanghaolan@stumail.neu.edu.cn
+```
+
+## Citation
+Please cite the paper and star the repo if you use HIPPO and find it helpful.
+```
+@misc{liu2025hippoenhancingtableunderstanding,
+      title={HIPPO: Enhancing the Table Understanding Capability of Large Language Models through Hybrid-Modal Preference Optimization}, 
+      author={Zhenghao Liu and Haolan Wang and Xinze Li and Qiushi Xiong and Xiaocui Yang and Yu Gu and Yukun Yan and Qi Shi and Fangfang Li and Ge Yu and Maosong Sun},
+      year={2025},
+      eprint={2502.17315},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2502.17315}, 
+}
+```
