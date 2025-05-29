@@ -21,7 +21,7 @@ CUDA_VISIBLE_DEVICES=0 python markdown_generate_response.py \
 --output_file output/image_response.jsonl
 
 # generate dpo data
-python markdown_generate_response.py \
+python generate_dpo_data.py \
 --input_multi_modal_file output/multi_modal_output.jsonl \
 --input_image_file output/image_output.jsonl \
 --input_markdown_file output/markdown_output.jsonl \
